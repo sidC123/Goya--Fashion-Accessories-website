@@ -1,0 +1,3277 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#main-container{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width:550px){
+    .navbar{
+        width: 100%;
+        height: 45px;
+    }
+    .navbar-left-ul li, .navbar-right-ul li{
+        display: none;
+    }
+    #navbar-center-logo{
+        width: 100.5px;
+        margin: 0 auto !important;
+    }
+}
+#hamburger{
+    font-size: 22px;
+}
+.hamburger{
+    text-decoration: none;
+    Padding-left: 40px;
+    color: black;
+}
+.navbar-left-ul{
+    list-style-type: none;
+    display: flex;
+    margin-right: auto;
+    padding-left: 20px;
+}
+.navbar-left-ul a{
+    text-decoration: none;
+    color: #000;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+@media only screen and (max-width:550px){
+    .navbar-left-ul li, .navbar-right-ul li{
+        display: none;
+    }
+}
+
+/* On hover under line animation */
+.navbar-left-ul a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+  
+.navbar-left-ul a:hover::before{
+    transform: scaleX(1);
+}
+
+#navbar-center-logo{
+    justify-content: center;
+    margin-right: 175px;
+}
+@media only screen and (max-width:550px){
+    #navbar-center-logo{
+        width: 100.5px;
+        margin: 0 auto !important;
+    }
+}
+
+.navbar-right-ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+.navbar-right-ul a{
+    text-decoration: none;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin-right: 30px;
+}
+
+
+
+
+
+/* ----------------HOME_PAGE_CSS_STARTS------------------ */
+
+/* --------------CARAOUSAL SECTION-------------- */
+.top-carousal{
+    margin-top: 90px;
+    width: 100%;
+    height: 580px;
+    background-image: url(Images/HOME/curly_hair_girl-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width:550px){
+    .top-carousal{
+        margin-top: 45px;
+    }
+}
+
+.top-carousal-text{
+    width: 450px;
+    height: auto;
+    /* background-color: skyblue; */
+    margin-left: 120px;
+}
+@media only screen and (max-width:550px){
+    .top-carousal-text{
+        margin-left: 40px;
+    height: auto;
+
+    }
+}
+
+.top-carousal-text h5{
+    height: 16px;
+    width: 60px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;   
+    padding: 3px 5px 5px 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    /* margin-left: 5px; */
+}
+@media only screen and (max-width:550px){
+    .top-carousal-text h5{
+    height: 14px;
+    width: 50px;
+    color: white;   
+    line-height: 15px;
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+    }
+}
+
+.top-carousal-text h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 65px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width:550px){
+    .top-carousal-text h1{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.top-carousal-text h4{
+    color: rgb(92, 91, 91);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+@media only screen and (max-width:550px){
+    .top-carousal-text h4{
+        font-size: 18px;
+        line-height: 10px !important;
+    }
+}
+
+/* -------------------Sale section ---------------- */
+.sale-div{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+.sale-div1{
+    background-image: url(Images/HOME/banner-shirt2-768x976.jpg.webp);
+    background-position: center;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: table;
+    transition: all 0.8s ease;
+}
+
+.sale-div1 h4{
+    width: 75px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+.sale-div1-click-txt{
+    width: 105px;
+    height: 75px;
+    background-color: white;
+    display: table;
+    margin: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.sale-div1-click-txt a{
+    width: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    white-space: pre-line;
+}
+
+.sale-div2{
+    background-image: url(Images/HOME/banner-shirt1-768x976.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 104%;
+    width: 350px;
+    height: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: table;
+    transition: all 0.8s ease;
+}
+.sale-div2 h4{
+    width: 75px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+.sale-div2-click-txt{
+    width: 105px;
+    height: 75px;
+    background-color: white;
+    display: table;
+    margin: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+.sale-div2-click-txt a{
+    width: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    white-space: pre-line;
+}
+.sale-div3{
+    background-color: rgb(202, 174, 104);
+    width: 350px;
+    height: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: table;
+}
+.sale-div3 h4{
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+    font-weight: 200;
+    color: white;
+}
+.sale-div3-click-txt{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    display: table;
+    margin: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+.middle-div p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: rgb(235,226,201);
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.sale-div3-click-txt a{
+    width: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    white-space: pre-line;
+}
+
+/* middle-div used to make vertical align middle */
+.middle-div{
+    display: table-cell;
+    vertical-align: middle;
+}
+/* sale-div background zoom effect */
+.sale-div1:hover{
+    background-size: 110%;
+}
+.sale-div2:hover{
+    background-size: 110%;
+}
+/* sale-div inner text transaprency on hover effect */
+.sale-div1-click-txt:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.sale-div2-click-txt:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.sale-div3-click-txt:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---------------------BEST SELLING SECTION---------------------- */
+.best-selling-div{
+    width: 100%;
+    height: 580px;
+    /* background-color:lightblue; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* border-bottom: thin rgba(218, 211, 211, 0.623) inset; */
+}
+.best-selling-div h2{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+#best-selling-description{
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(122, 122, 122);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Best selling products main div */
+.best-selling-products-div{
+    width: 100%;
+    height: 430px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+
+/* Best selling products div */
+
+.best-selling-product1{
+    /* background-color:skyblue; */
+    width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.best-selling-product2{
+    /* background-color:skyblue; */
+    width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.best-selling-product3{
+    /* background-color:skyblue; */
+    width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+
+/* best selling images div */
+
+.best-selling-img1{
+    width: 350px;
+    height: 350px;
+    /* background-color: springgreen; */
+    background-image: url(images/HOME/women-cashmere-a4-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.best-selling-img2{
+    width: 350px;
+    height: 350px;
+    /* background-color: springgreen; */
+    background-image: url(images/HOME/woman-microbag-a1-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    transition: all 0.3s ease-in-out;
+}
+.best-selling-img3{
+    width: 350px;
+    height: 350px;
+    /* background-color: springgreen; */
+    background-image: url(images/HOME/women-cashmere-a3-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+#new-product-label{
+    position: absolute;
+    width: 42px;
+    height: 18px;
+    padding-top: 3px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    color: slategray;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(85, 85, 85, 0.4);
+    border-radius: 12px;
+    margin-top: 0;
+    left: 20px;
+    top: 20px;
+    font-weight: 500;
+    /* transition: all 0.3s ease-in-out; */
+}
+/* .best-selling-product3:hover #new-product-label{
+    transform: translateY(-6px);
+} */
+
+ /* 1st div position UL and Hover effects */
+
+#best-selling-ul1{
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0px 15px 0 0;
+    visibility: hidden;
+    /* transition: all 0.2s ease-in-out; */
+}
+#best-selling-ul1 li{
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 15px 0;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+#best-selling-ul1 a{
+    text-decoration: none;
+    color: black;
+}
+.best-selling-product1:hover .best-selling-img1{
+    transform: translateY(-6px);
+    background-size: 105%;
+}
+.best-selling-img1:hover {
+    background-image: url(images/HOME/women-cashmere-a2-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    z-index: -5;
+}
+.best-selling-product1:hover ul{
+    /* visibility: visible; */
+    color: red;
+    z-index: 2;
+}
+
+
+ /* 2nd div position UL and Hover effects */
+
+#best-selling-ul2{
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0px 15px 0 0;
+}
+#best-selling-ul2 li{
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 15px 0;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    /* visibility: hidden; */
+    /* transition: all 0.2s ease-in-out; */
+}
+#best-selling-ul2 a{
+    text-decoration: none;
+    color: black;
+}
+.best-selling-product2:hover .best-selling-img2{
+    transform: translateY(-6px);
+    background-size: 105%;
+}
+.best-selling-img2:hover {
+    background-image: url(images/HOME/woman-microbag-a2-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+/* .best-selling-product2:hover #best-selling-ul2 li{
+    visibility: visible;
+} */
+
+
+ /* 3rd div position UL and Hover effects */
+
+#best-selling-ul3{
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0px 15px 0 0;
+}
+#best-selling-ul3 li{
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 15px 0;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    /* visibility: hidden; */
+    /* transition: all 0.2s ease-in-out; */
+}
+#best-selling-ul3 a{
+    text-decoration: none;
+    color: black;
+}
+.best-selling-product3:hover .best-selling-img3{
+    transform: translateY(-6px);
+    background-size: 105%;
+}
+.best-selling-img3:hover {
+    background-image: url(images/HOME/women-cashmere-a1-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+/* .best-selling-product3:hover #best-selling-ul3 li{
+    visibility: visible;
+} */
+
+
+/* best selling description */
+.best-selling-name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    color: black;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.best-selling-price{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    color: rgb(161, 161, 161);
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ----------------------TESTIMONIALS SECTION--------------------- */
+.testimonials-main-div{
+    width: 100%;
+    height: 435px;
+    background-color:rgb(241,232,223);
+    margin: 80px 0 80px 0;
+}
+
+.testimonials-main-div>p{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 70px 0 35px 0; 
+    margin: 0; 
+    font-size: 33px;
+    font-weight: 300;
+}
+.testimonials-container{
+    width: 100%;
+    height: 240px;
+    /* background-color: rgba(176, 224, 230, 0.582); */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.testimonial-box1{
+    width: 500px;
+    height: 240px;
+    margin: 0 25px 0 25px;
+    /* background-color: pink; */
+}
+.testimonial-box2x{
+    width: 500px;
+    height: 220px;
+    margin: 0 25px 0 25px;
+    /* background-color: pink; */
+}
+.testimonial-box1>p{
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+.testimonial-data1{
+    width: 255px;
+    height: 150px;
+    /* background-color: skyblue; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.testimonial-data2{
+    width: 255px;
+    height: 150px;
+    /* background-color: skyblue; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.testimonial-data1 img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: auto;
+}
+.testimonial-data2 img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: auto;
+}
+.testimonial-innertext-div{
+    margin:auto;
+}
+.testimonial-name{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1000;
+}
+.testimonial-occupation{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: slategrey;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+/* ---------------------TRENDING SECTION -----------------------*/
+.trending-div{
+    width: 100%;
+    height: 540px;
+    /* background-color:lightblue; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+.trending-div h2{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+#trending-description{
+    width: 530px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(122, 122, 122);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Trending products main div */
+.trending-products-div{
+    width: 100%;
+    height: 330px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+
+/* trending products div */
+
+.trending-product1{
+    /* background-color:skyblue; */
+    height: 330px;
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.trending-product2{
+    /* background-color:skyblue; */
+    height: 330px;
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.trending-product3{
+    /* background-color:skyblue; */
+    height: 330px;
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.trending-product4{
+    /* background-color:skyblue; */
+    height: 330px;
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+
+/* trending images div */
+
+.trending-img1{
+    width: 250px;
+    height: 250px;
+    /* background-color: springgreen; */
+    background-image: url(images/HOME/women-cashmere-a4-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.trending-img2{
+    width: 250px;
+    height: 250px;
+    /* background-color: springgreen; */
+    background-image: url(images/HOME/woman-microbag-a1-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    transition: all 0.3s ease-in-out;
+}
+.trending-img3{
+    width: 250px;
+    height: 250px;
+    /* background-color: springgreen; */
+    background-image: url(images/HOME/women-cashmere-a3-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.trending-img4{
+    width: 250px;
+    height: 250px;
+    /* background-color: springgreen; */
+    background-image: url(images/HOME/woman-hoodie-a6-450x450.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+#new-product-label2{
+    position: absolute;
+    width: 42px;
+    height: 18px;
+    padding-top: 3px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    color: rgb(244,146,146);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(85, 85, 85, 0.4);
+    border-radius: 12px;
+    margin-top: 0;
+    left: 20px;
+    top: 20px;
+    font-weight: 500;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+ /* 1st div position UL and Hover effects */
+
+#trending-ul1{
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    position: absolute;
+    display: flex;
+    left: 50px;
+    top: 180px;
+    padding: 0;
+    margin:0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    /* transform-origin: center; */
+    transition-duration: all 0.3s ease;
+}
+#trending-ul1 li{
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+#trending-ul1 li:nth-child(2){
+    border-left: 1px solid rgb(238,236,234);
+    border-right: 1px solid rgb(238,236,234);
+}
+#trending-ul1 a{
+    text-decoration: none;
+    color: black;
+}
+.trending-product1:hover .trending-img1{
+    background-size: 105%;
+    transform: translateY(-6px);
+}
+.trending-img1:hover{
+    background-image: url(images/HOME/women-cashmere-a2-450x450.jpg);
+    background-position: center;
+    background-size: 105%;
+    background-repeat: no-repeat;
+}
+.trending-product1:hover #trending-ul1{
+    /* transform: scale(1.1); */
+    visibility: visible;
+}
+
+ /* 2nd div position UL and Hover effects */
+
+ #trending-ul2{
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    position: absolute;
+    display: flex;
+    left: 50px;
+    top: 180px;
+    padding: 0;
+    margin:0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    /* transform-origin: center; */
+    transition-duration: all 0.2s ease;
+}
+#trending-ul2 li{
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+#trending-ul2 li:nth-child(2){
+    border-left: 1px solid rgb(238,236,234);
+    border-right: 1px solid rgb(238,236,234);
+}
+#trending-ul2 a{
+    text-decoration: none;
+    color: black;
+}
+.trending-product2:hover .trending-img2{
+    background-size: 105%;
+    transform: translateY(-6px);
+}
+.trending-img2:hover{
+    background-image: url(images/HOME/woman-microbag-a2-450x450.jpg);
+    background-position: center;
+    background-size: 105%;
+    background-repeat: no-repeat;
+}
+.trending-product2:hover #trending-ul2{
+    /* transform: scale(1.1); */
+    visibility: visible;
+}
+
+
+ /* 3rd div position UL and Hover effects */
+
+ #trending-ul3{
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    position: absolute;
+    display: flex;
+    left: 50px;
+    top: 180px;
+    padding: 0;
+    margin:0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    /* transform-origin: center; */
+    transition-duration: all 0.2s ease;
+}
+#trending-ul3 li{
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+#trending-ul3 li:nth-child(2){
+    border-left: 1px solid rgb(238,236,234);
+    border-right: 1px solid rgb(238,236,234);
+}
+#trending-ul3 a{
+    text-decoration: none;
+    color: black;
+}
+.trending-product3:hover .trending-img3{
+    background-size: 105%;
+    transform: translateY(-6px);
+}
+.trending-img3:hover{
+    background-image: url(images/HOME/women-cashmere-a1-450x450.jpg);
+    background-position: center;
+    background-size: 105%;
+    background-repeat: no-repeat;
+}
+.trending-product3:hover #trending-ul3{
+    /* transform: scale(1.1); */
+    visibility: visible;
+}
+
+ /* 4th div position UL and Hover effects */
+
+ #trending-ul4{
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    position: absolute;
+    display: flex;
+    left: 50px;
+    top: 180px;
+    padding: 0;
+    margin:0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    /* transform-origin: center; */
+    transition-duration: visibili 0.5s;
+}
+#trending-ul4 li{
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+#trending-ul4 li:nth-child(2){
+    border-left: 1px solid rgb(238,236,234);
+    border-right: 1px solid rgb(238,236,234);
+}
+#trending-ul4 a{
+    text-decoration: none;
+    color: black;
+}
+.trending-product4:hover .trending-img4{
+    background-size: 105%;
+    transform: translateY(-6px);
+}
+.trending-img4:hover{
+    background-image: url(images/HOME/woman-hoodie-a1-450x450.jpg);
+    background-position: center;
+    background-size: 105%;
+    background-repeat: no-repeat;
+}
+.trending-product4:hover #trending-ul4{
+    /* transform: scale(1.1); */
+    visibility: visible;
+}
+
+
+/* trending description */
+.trending-name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    color: black;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.trending-price{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    color: rgb(161, 161, 161);
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*--------------------- VISIT US section ---------------------- */
+.visit-us-div{
+    width: 100%;
+    height: 800px;
+    /* background-color:lightblue; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+.visit-us-div h2{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+#visit-us-description{
+    width: 530px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(122, 122, 122);
+    font-size: 16px;
+    font-weight: 700;
+}
+.visit-us-img-div{
+    width: 1092px;
+    height: 580px;
+    /* background-color: pink; */
+    background-image: url(Images/HOME/boutique.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------------------------HOME_PAGE_CSS_ENDS---------------------*/
+
+/* --------------FOOTER-sid-------------- */
+footer{
+    width: 100%;
+    height: 600px;
+    /* background-color: cornflowerblue; */
+    padding-top: 15px;
+    z-index: 5;
+}
+.footer-menu-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1092px;
+    height: 250px;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu-div ul{
+    list-style: none;
+    padding-left:0;
+    margin-left: -5px;
+}
+.footer-menu-div ul a, .followus-text{
+    text-decoration: none;
+    color: rgb(78,78,78);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+.footer-menu-div ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* --------UNDER LINE ANIMATION CSS--------- */
+.footer-menu-ul a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.footer-menu-ul a:hover::before{
+    transform: scaleX(1);
+}
+
+.footer-box{
+    width: 260px;
+}
+.footer-box h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(108,110,116);
+    font-weight: 200;
+    font-size: 16px;
+}
+.followus-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#signup-text1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+#signup-text2{
+    text-align: center;
+    color: rgb(108,110,116);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.email-input{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-input input{
+    height: 29px;
+    width: 165px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.email-input input:focus{
+    outline: none;
+}
+.email-input button{
+    width: 115px;
+    height: 53px;
+    margin-left: 10px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+::placeholder{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.abc ul{
+    list-style: none;
+    padding-left: 0%;
+    display: flex;
+    margin-left: auto;
+    margin-top: -15px;
+}
+.abc ul a, li{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    color: black;
+}
+.footer-end{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    /* background-color: pink; */
+    margin-top: 80px;
+    border-top: thin rgba(218, 211, 211, 0.623) inset;
+}
+.f1{
+    margin-left: 100px;
+    margin-right: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(24, 24, 24);
+}
+.f2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(24, 24, 24);
+}
+.f3{
+    margin-left: auto;
+    margin-right: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 131, 131);
+    font-size: 15px;
+} 
+
+
+
+/*-------------------CONTACT_US_PAGE_CSS_STARTS------------------*/
+
+.contact-us-container{
+    width: 100%;
+    height: 770px;
+    display: flex;
+    /* background-color: skyblue; */
+    margin-top: 90px;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+.right-div{
+    /* background-color: rgb(229, 255, 0); */
+    width: 690px;
+}
+.text-container{
+    /* background-color: skyblue; */
+    width: 500px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 95px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-div1{
+    width: 204px;
+    height: 150px;
+    /* background-color: pink; */
+    margin-right: auto;
+}
+.c1 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 27px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.c1 p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+.text-div2{
+    width: 235px;
+    height: 150px;
+    /* background-color: pink; */
+    margin-left: auto;
+}
+
+#instruction-text{
+    width: 500px;
+    height: 40px;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    font-size: 16px;
+    /* background-color: red; */
+    /* padding-top: 13px; */
+    box-sizing: border-box;
+}
+
+#name-input{
+    width: 500px;
+    height: 45px;
+    margin-left: 95px;
+    outline: none;
+    border: 2px solid rgb(179, 179, 179);
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+#name-input::placeholder{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+#email-input{
+    width: 500px;
+    height: 45px;
+    margin-left: 95px;
+    outline: none;
+    border: 2px solid rgb(179, 179, 179);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#email-input::placeholder{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+#message-input{
+    width: 500px;
+    height: auto;
+    margin-left: 95px;
+    outline: none;
+    border: 2px solid rgb(179, 179, 179);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#message-input::placeholder{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.right-div button{
+    width: 115px;
+    height: 53px;
+    margin-top: 15px;
+    margin-left: 95px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.right-div button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+/*-------------------ABOUT_US_PAGE_CSS_STARTS------------------*/
+
+/* ---------------section1 css --------------- */
+.about-us-container{
+    width: 100%;
+    height: auto;
+    /* background-color: skyblue; */
+    margin-top: 90px;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+.about-section1{
+    margin-bottom: 40px;
+    width: 100%;
+    height: 580px;
+    background-image: url(Images/About\ Us/banner-cashmere.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.about-section1-text{
+    /* background-color: pink; */
+    width: 420px;
+    height: 300px;
+    margin-left: 120px;
+}
+.about-section1-text h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about-section1-text h4{
+    color: rgb(92, 91, 91);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    margin-left: 5px;
+    border-left: 3px solid black;
+    padding-left: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+/* ------------section2 css------------- */
+.about-section2{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 610px;
+    /* background-color: pink; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section2-video{
+    height: 610px;
+    width: 600px;
+    background-image: url(Images/About\ Us/rib_tank.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: skyblue; */
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#video-link{
+    text-decoration: none;
+    color: white;
+    font-size: 120px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+#video-link:hover{
+    transform: scale(1.15);
+}
+.about-section2-text-div{
+    width: 450px;
+    height: 610px;
+    /* background-color: springgreen; */
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section2-text{
+    width: 450px;
+    height: 350px;
+    /* background-color: yellow ; */
+}
+.about-section2-text .section2-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(195,175,129);
+    letter-spacing: 1.5px;
+    padding-left: 30px;
+}
+.about-section2-text h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 15px;
+    padding-left: 30px;
+}
+.about-section2-text h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    line-height: 27px;
+    padding-left: 30px;
+}
+.countdown-div{
+    width: 450px;
+    height: 150px;
+    /* background-color: tomato; */
+    display: flex;
+}
+.countdown-div-left{
+    width: 225px;
+    height: 150px;
+    /* background-color: skyblue; */
+}
+.countdown-div-left h2{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.countdown-div-left p{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.countdown-div-right{
+    width: 225px;
+    height: 150px;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+}
+.countdown-div-right p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    line-height: 27px;
+    padding-left: 0px;
+}
+
+
+/* ----------section 3 css ---------- */
+.about-section3{
+    margin-bottom: 40px;
+    width: 100%;
+    height: 590px;
+    background-color: rgb(242,242,242);
+}
+.section3-heading1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(195,175,129);
+    letter-spacing: 2.5px;
+    padding-top: 40px;
+}
+.section3-heading2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 12px;
+    text-align: center;
+}
+.text-column-main-div{
+    width: 700px;
+    height: 420px;
+    /* background-color: skyblue; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.text-column{
+    width: 320px;
+    height: 420px;
+    /* background-color: yellow; */
+}
+.text-column p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(128, 128, 128);
+    line-height: 27px;
+    padding-bottom: 10px;
+}
+
+
+/* -------------section 4 css -------------- */
+.about-section4{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 610px;
+    /* background-color: pink; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section4-image-div{
+    height: 610px;
+    width: 600px;
+    background-image: url(Images/About\ Us/women-cashmere-b3-1024x1024.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: skyblue;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section4-text-div{
+    width: 480px;
+    height: 610px;
+    /* background-color: springgreen; */
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section4-text{
+    width: 450px;
+    height: 350px;
+    /* background-color: yellow ; */
+}
+.about-section4-text .section4-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(195,175,129);
+    letter-spacing: 1.5px;
+    padding-left: 30px;
+}
+.about-section4-text h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 15px;
+    padding-left: 30px;
+}
+.about-section4-text h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    line-height: 27px;
+    padding-left: 30px;
+}
+.section4-countdown-div{
+    width: 450px;
+    height: 150px;
+    /* background-color: tomato; */
+    display: flex;
+}
+.section4-countdown-div-left{
+    width: 150px;
+    height: 150px;
+    /* background-color: skyblue; */
+}
+.section4-countdown-div-left h2{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.section4-countdown-div-left p{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section4-countdown-div-right{
+    width: 225px;
+    height: 150px;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+}
+.section4-countdown-div-right p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    line-height: 27px;
+    padding-left: 0px;
+}
+
+
+/* ----------------section 5 css-------------- */
+.section5-div{
+    width: 100%;
+    height: 460px;
+    background-color: rgb(242,242,242);
+}
+
+
+.section5-heading{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(195,175,129);
+    letter-spacing: 1.5px;
+    padding-top: 90px;
+}
+.section5-div h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+    text-align: center;
+}
+.section5-box-container{
+    display: flex;
+    height: 220px;
+    width: 100%;
+    justify-content: center;
+    /* background-color: pink; */
+}
+.box{
+    width: 220px;
+    height: 220px;
+    /* background-color: skyblue; */
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.box p{
+    text-align: center;
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.box h3{
+    text-align: center;
+    font: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+}
+
+
+/* ---------------section 6 ---------------- */
+.section6-div{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+.section6-container{
+    width: 100%;
+    height: 350px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+}
+.pqr{
+    width: 252px;
+    height: 350px;
+    margin-left: 16px;
+    margin-right: 16px;
+    /* background-color: yellow; */
+}
+#section6-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(195,175,129);
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.section6-box1 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.section6-box1 p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    line-height: 27px;
+    margin-top: 25px;
+    /* word-spacing: 3px; */
+}
+.section6-box2-img{
+    width: 252px;
+    height: 252px;
+    background-image: url(Images/About\ Us/men-shirtgreen-a3-1024x1024.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section6-box3-img{
+    width: 252px;
+    height: 252px;
+    background-image: url(Images/About\ Us/women-relaxedshirt-a3-1024x1024.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section6-box4-img{
+    width: 252px;
+    height: 252px;
+    background-image: url(Images/About\ Us/women-turtleneck-b2-1024x1024.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overlay-ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    transition-duration: 0.4;
+}
+.overlay-ul a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.section6-box2 h3{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.section6-box3 h3{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.section6-box4 h3{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.section6-box2 p{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    margin-top: 0;
+}
+.section6-box3 p{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    margin-top: 0;
+}
+.section6-box4 p{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    margin-top: 0;
+}
+
+
+
+/* ----------on hover section 6 css ------------- */
+/* --------box2------- */
+.section6-box2-overlay{
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 252px;
+    height: 252px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.pqr:hover .section6-box2-overlay{
+    opacity: 1;
+}
+.section6-box2-img:hover .overlay-ul2{
+    transform: translateY(-15px);
+}
+
+
+/* --------box3------- */
+.section6-box3-overlay{
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 252px;
+    height: 252px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.pqr:hover .section6-box3-overlay{
+    opacity: 1;
+}
+.section6-box3-img:hover .overlay-ul3{
+    transform: translateY(-15px);
+}
+
+
+/* --------box4------- */
+.section6-box4-overlay{
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 252px;
+    height: 252px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.pqr:hover .section6-box4-overlay{
+    opacity: 1;
+}
+.section6-box4-img:hover .overlay-ul4{
+    transform: translateY(-15px);
+}
+
+
+
+/* --------------- BLOG PAGE CSS STARTS------------- */
+
+.blog-container{
+    width: 100%;
+    height: auto;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+    display: flex;
+}
+.blog-heading1{
+    width: 100%;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: skyblue; */
+    margin-top: 90px;
+}
+.blog-heading1 h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.blog-container-left{
+    width: 670px;
+    height: 2480px;
+    /* background-color: pink; */
+    margin-left: 165px;
+    margin-right: 88px;
+}
+.image1{
+    width: 670px;
+    height: 446px;
+    background-image: url(Images/Blog/close-up.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    transition: all 0.7s ease;
+}
+.image1:hover{
+    background-size: 105%;
+}
+.image1-sticker{
+    color: white;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    background-color: rgba(3, 3, 3, 0.418);
+    border-radius: 10px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.section1{
+    width: 450px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: yellow; */
+    box-sizing: border-box;
+}
+.section1-ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.section1-ul a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.section1-heading{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#section1-featured-link{
+    width: 70px;
+    width: 50px ;
+    text-decoration: none;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: rgb(185,161,107);
+    border-radius: 5px;
+}
+.section1-text-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+}
+
+.section2{
+    width: 670px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    /* background-color: greenyellow; */
+    margin-bottom: 65px;
+}
+.section2-img{
+    width: 260px;
+    height: 175px;
+    background-image: url(Images/Blog/star-768x512.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s ease;
+}
+.section2-img:hover{
+    background-size: 105%;
+}
+.section2-text{
+    width: 300px;
+    height: 175px;
+    /* background-color: navy; */
+    margin-left: 42px;
+}
+.section2-text-heading1{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.section2-text-heading2{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.section2-text-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+}
+
+
+
+
+
+.section3{
+    width: 670px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    /* background-color: greenyellow; */
+    margin-bottom: 65px;
+}
+.section3-img{
+    width: 260px;
+    height: 175px;
+    background-image: url(Images/Blog/sunny-768x512.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s ease;
+}
+.section3-img:hover{
+    background-size: 105%;
+}
+.section3-text{
+    width: 300px;
+    height: 175px;
+    /* background-color: navy; */
+    margin-left: 42px;
+}
+.section3-text-heading1{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.section3-text-heading2{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.section3-text-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+}
+
+
+
+
+
+
+.section4{
+    width: 670px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    /* background-color: greenyellow; */
+    margin-bottom: 65px;
+}
+.section4-img{
+    width: 260px;
+    height: 175px;
+    background-image: url(Images/Blog/two-women-768x512.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s ease;
+}
+.section4-img:hover{
+    background-size: 105%;
+}
+.section4-text{
+    width: 300px;
+    height: 175px;
+    /* background-color: navy; */
+    margin-left: 42px;
+}
+.section4-text-heading1{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.section4-text-heading2{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.section4-text-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+.section5{
+    width: 670px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;   */
+    /* background-color: greenyellow; */
+    margin-bottom: 65px;
+}
+.section5-img{
+    width: 260px;
+    height: 150px;
+    background-image: url(Images/Blog/guy_and_leaves-768x384.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s ease;
+}
+.section5-img:hover{
+    background-size: 105%;
+}
+.section5-text{
+    width: 300px;
+    height: 175px;
+    /* background-color: navy; */
+    margin-left: 42px;
+}
+.section5-text-heading1{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.section5-text-heading2{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.section5-text-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+.section6{
+    width: 670px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;   */
+    /* background-color: greenyellow; */
+    margin-bottom: 65px;
+}
+.section6-img{
+    width: 200px;
+    height: 300px;
+    background-image: url(Images/Blog/guy-768x1155.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s ease;
+    margin-left: 35px;
+}
+.section6-img:hover{
+background-size: 105%;
+}
+.section6-text{
+    width: 300px;
+    height: 175px;
+    /* background-color: navy; */
+    margin-left: 65px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+.section6-text-heading1{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.section6-text-heading2{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.section6-text-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+.section7{
+    width: 670px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;   */
+    /* background-color: greenyellow; */
+    margin-bottom: 65px;
+}
+.section7-img{
+    width: 200px;
+    height: 300px;
+    background-image: url(Images/Blog/beach-van-768x1152.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s ease;
+    margin-left: 35px;
+}
+.section7-img:hover{
+background-size: 105%;
+}
+.section7-text{
+    width: 300px;
+    height: 175px;
+    /* background-color: navy; */
+    margin-left: 65px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+.section7-text-heading1{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.section7-text-heading2{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.section7-text-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+}
+
+.button-div{
+    display: flex;
+    align-items: center;
+}
+
+.learn-more-button{
+    width: 170px;
+    height: 55px;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-more-button a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fixed-right-div{
+    width: 290px;
+    height: auto;
+    /* background-color: cornflowerblue; */
+    position: fixed;
+    right: 170px;
+    top: 0;
+    padding-top: 200px;
+    z-index: 4;
+}
+.fixed-div-heading{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: gray;
+    margin-top: 0;
+}
+
+.fixed-div-sections{
+    width: 290px;
+    height: 66.6px;
+    /* background-color: yellow; */
+    margin-bottom: 22px;
+    display: flex;
+}
+
+
+.fixed-div-section1-img1{
+    width: 100px;
+    height: 66.6px;
+    /* background-color: tomato; */
+    background-image: url(Images/Blog/close-up.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fixed-div-section1-img2{
+    width: 100px;
+    height: 66.6px;
+    /* background-color: tomato; */
+    background-image: url(Images/Blog/star-768x512.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fixed-div-section1-img3{
+    width: 100px;
+    height: 66.6px;
+    /* background-color: tomato; */
+    background-image: url(Images/Blog/sunny-768x512.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.fixed-div-section1-text{
+    width: 190px;
+    height: 66.6px;
+    display: table;
+}
+.fixed-div-inner-heading{
+    margin: 0;
+    padding-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16.5px;
+    font-weight: 300;
+    color: black;
+}
+.fixed-div-dates{
+    padding-left: 30px;
+    margin-top: 7px;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+
+
+/* ---------------SHOP PAGE STARTS HERE--------------- */
+
+.product-section{
+    margin-top: 90px;
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+
+.product-images-list{
+    list-style: none;
+    width: 70px;
+    height: 310px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding-left: 0px;
+    /* background-color: pink; */
+}
+
+.product-images-list li{
+    margin: 0;
+}
+
+.product-images-list img{
+    width: 68px;
+    height: 68px;
+    margin-bottom: 5.5px; 
+    border: 1px solid white;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.product-images-list img:hover{
+    border: 1px solid rgb(148, 148, 148);
+}
+
+.images-container{
+    height: 619.886px;
+    width: 635px;
+    display: flex;
+    /* background-color: skyblue; */
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.main-image{
+    width: 545px;
+    height: 545px;
+    background-image: url(Images/Shop\ Page/women-cashmere-a4.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid rgb(148, 148, 148); */
+    box-sizing: border-box;
+}
+
+.product-details-container{
+    height: 619.886px;
+    width: 475px;
+    padding: 0 15px 0 15px;
+    /* background-color: springgreen; */
+    box-sizing: border-box;
+}
+
+.product-info{
+    height: 445px;
+    width: 595px;
+    padding: 30px 0 0 45px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 400px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(153,153,153);
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product-title{
+    width: 400px;
+    height: 42.1818px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.price-range{
+    width: 400px;
+    height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 21px;
+    color: rgb(119,119,119);
+    margin-top: 15px;
+    box-sizing: border-box;
+
+}
+
+.product-description{
+    width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109,109,109);
+    font-weight: 200;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.options1{
+    width: 400px;
+    height: 42px;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    border-top: 1px solid rgb(180, 180, 180);
+}
+
+.options1 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.712);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+.row1-td1{
+    width: 120px;
+    height: 45px;
+    /* background-color: yellow; */
+    text-align: center;
+}
+.row1-td1 p{
+    margin-top: 12px;
+    width: 110px;
+    height: 24px;
+    background-color: rgb(242,242,242);
+    padding-top: 3px;
+    box-sizing: border-box;
+}
+.row1-td2{
+    width: 140px;
+    height: 45px;
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+.row1-td2 p{
+    margin-top: 12px;
+    padding-top: 3px;
+    color: rgba(0, 0, 0, 0.712);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.row1-td3{
+    width: 140px;
+    height: 45px;
+    /* background-color: yellow; */
+    text-align: right;
+    padding-right: 15px   ;
+}
+
+.row1-td3 p{
+    margin-top: 12px;
+    padding-top: 3px;
+    color: rgba(0, 0, 0, 0.712);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.options2{
+    width: 400px;
+    height: 45px;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.row2-td1{
+    width: 120px;
+    height: 45px;
+    /* background-color: yellow; */
+    text-align: center;
+}
+.row2-td1 pre{
+    margin-top: 12px;
+    padding-top: 3px;
+    color: rgba(0, 0, 0, 0.712);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.row2-td2{
+    width: 140px;
+    height: 45px;
+    /* background-color: yellow; */
+    text-align: center;
+}
+.row2-td2 p{
+    margin-top: 12px;
+    padding-top: 3px;
+    color: rgba(0, 0, 0, 0.712);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+.row2-td3{
+    width: 140px;
+    height: 45px;
+    /* background-color: yellow; */
+    text-align: right;
+    padding-right: 15px;
+}
+.row2-td3 p{
+    margin-top: 12px;
+    padding-top: 3px;
+    color: rgba(0, 0, 0, 0.712);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.cart{
+    display: table;
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    transition-duration: 0.4s;
+    margin-bottom: 10px;
+}
+#cart{
+    text-decoration: none;
+}
+.cart p{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+.cart:hover{
+    background-color: rgb(59, 59, 59);
+}
+
+
+
+
+
+.wishlist{
+    display: table;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(237,237,237);
+    transition-duration: 0.4s;
+    margin-bottom: 25px;
+}
+#wishlist{
+    text-decoration: none;
+}
+.wishlist p{
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.category{
+    width: 400px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    border-top: 1px solid rgb(180, 180, 180);
+}
+
+#c1{
+    width: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+}
+#c2{
+    width: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+}
+#c3{
+    width: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+}
+#c4{
+    width: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+}
+
+
+.share{
+    width: 400px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.share p{
+    margin-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: rgb(145, 145, 145)
+}
+.share-links{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+.share-links li{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.share-links a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.description-section{
+    width: 1140px;
+    height: 229px;
+    margin: 75px auto 45px auto;
+    /* background-color: skyblue; */
+}
+.description-box{
+    display: flex;
+    align-items: center;
+}
+.description{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.line{
+    width: 35px;
+    height: 1px;
+    margin-left: 15px;
+    padding-top: 5px;
+    border-bottom: thin rgb(218, 211, 211) inset;
+}
+.description-para1{
+    width: 820px;
+    height: 67px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: pink; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109,109,109);
+    font-weight: 200;
+    font-size: 17px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+.description-para2{
+    width: 820px;
+    height: 67px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: pink; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109,109,109);
+    font-weight: 200;
+    font-size: 17px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+
+
+.review-section{
+    width: 1140px;
+    height: 229px;
+    margin: 75px auto 45px auto;
+    /* background-color: skyblue; */
+}
+.review-box{
+    display: flex;
+    align-items: center;
+}
+.review{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.review-para1{
+    width: 820px;
+    height: 67px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: pink; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109,109,109);
+    font-weight: 200;
+    font-size: 17px;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: center;
+}
+#review-button{
+    text-align: center;
+}
+.review-button{
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(65, 65, 65);
+    font-weight: 200;
+    font-size: 17px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.related-products-section{
+    width: 1140px;
+    height: 500px;
+    margin: 75px auto 45px auto;
+    /* background-color: skyblue; */
+    border-bottom: thin rgba(218, 211, 211, 0.623) inset;
+}
+.related-products-box{
+    display: flex;
+    align-items: center;
+}
+.related-products{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.related-products-container{
+    width: 1140px;
+    height: 325px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: pink; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109,109,109);
+    font-weight: 200;
+    font-size: 17px;
+    box-sizing: border-box;
+    line-height: 30px; 
+    text-align: center; */
+    display: flex;
+}
+
+.relatedp-box{
+    width: 255px;
+    height: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+/* .prod1-box{
+    background-color: yellow;
+}
+
+.prod2-box{
+    background-color: navajowhite;
+}
+.prod3-box{
+    background-color: rgb(133, 255, 133);
+}
+.prod4-box{
+    background-color: rgb(255, 115, 115);
+} */
+
+
+.prod1-img{
+    width: 255px;
+    height: 255px;
+    background-image: url(Images/Shop\ Page/women-cashmere-a3-1000x1000.jpg.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition:all 0.4s ease;
+}
+.prod1-img:hover{
+    transform: translateY(-15);
+}
+.prod1-img:hover{
+    background-image: url(Images/Shop\ Page/women-cashmere-a1-450x450.jpg.webp);
+    background-size: 105%;
+}
+
+
+.prod2-img{
+    width: 255px;
+    height: 255px;
+    background-image: url(Images/Shop\ Page/woman-hoodie-a6-450x450.jpg.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+.prod2-img:hover{
+    background-image: url(Images/Shop\ Page/woman-hoodie-a1-450x450.jpg.webp);
+    background-size: 105%;
+}
+
+.prod3-img{
+    width: 255px;
+    height: 255px;
+    background-image: url(Images/Shop\ Page/women-short-a1-450x450.jpg.webp);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+.prod3-img:hover{
+    background-image: url(Images/Shop\ Page/women-short-a3-450x450.jpg.webp);
+    background-size: 105%;
+}
+
+.prod4-img{
+    width: 255px;
+    height: 255px;
+    background-image: url(Images/Shop\ Page/women-shortpatch-a3-450x450.jpg.webp);
+    background-position: center;
+    background-size: 100%;
+    transition: 0.4s;
+}
+.prod4-img:hover{
+    background-image: url(Images/Shop\ Page/women-shortpatch-a1-450x450.jpg.webp);
+    background-size: 105%;
+}
+
+.prod1-title-div{
+    width: 255px;
+    height: 25px;
+    display: flex;
+    /* margin-top: 0;
+    padding-top: 0; */
+}
+
+.prod-name{
+    margin-right: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109,109,109);
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.heart-icon{
+    margin-left: auto;
+}
+
+.price{
+    width: 255px;
+    height: 20px;
+    display: flex;
+    /* background-color: cadetblue; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109,109,109);
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.cancelled-price{
+    text-decoration: line-through;
+}
+.second-price{
+    margin-left: 20px;
+}
+.radio-button{
+    margin-top:25px;
+}
+.radio-button input{
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+---------------FOOTER-PUJA-CSS----------------
+
+footer{
+    width: 100%;
+    height: 370px;
+    background-color: rgb(58,58,58);
+    padding-top: 15px;
+}
+.footer-menu-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1092px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer-menu-div ul{
+    list-style: none;
+    padding-left:0;
+    margin-left: -5px;
+}
+.footer-menu-div ul a, .followus-text{
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+.footer-menu-div ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-box{
+    width: 300px;
+}
+.footer-box h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+}
+.followus-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(156,157,144);
+}
+#signup-text1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+#signup-text2{
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.email-input{
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-input input{
+    height: 29px;
+    width: 165px;
+    padding: 10px;
+}
+.email-input input:focus{
+    outline: none;
+}
+.email-input button{
+    width: 115px;
+    height: 53px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+::placeholder{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer-end{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    border-top: thin rgba(218, 211, 211, 0.623) inset;
+}
+.f1{
+    margin-left: 100px;
+    margin-right: 20px;
+    color: white;
+}
+.f2{
+    color: white;
+}
+.f3{
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-end ul{
+    list-style: none;
+    padding-left: 0%;
+    display: flex;
+    margin-left: auto;
+}
+.footer-end ul a, li{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: white;
+}
+.f3 label{
+    color: rgb(156,157,144);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.f3 select option{
+    background-color: transparent;
+}
+#language_input option{
+    background-color: transparent;    
+} */
